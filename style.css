@@ -43,3 +43,9 @@ Tags: block-patterns, full-site-editing
 .wp-site-blocks {
         padding-inline: var(--wp--preset--spacing--40);
 }
+
+/* Distinguish sticky posts without adding extra markup or assets. */
+.wp-block-post.sticky {
+        border-inline-start: 3px solid var(--wp--preset--color--accent);
+        padding-inline-start: var(--wp--preset--spacing--40);
+}
