@@ -38,3 +38,8 @@ Tags: block-patterns, full-site-editing
                 min-height: calc(100dvh - 46px);
         }
 }
+
+/* Keep site content away from the viewport edges on small screens. */
+.wp-site-blocks {
+        padding-inline: var(--wp--preset--spacing--40);
+}
