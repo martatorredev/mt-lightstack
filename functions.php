@@ -13,7 +13,7 @@ function mt_lightstack_enqueue_styles() {
                 'mt-lightstack-style',
                 get_stylesheet_uri(),
                 array(),
-                wp_get_theme()->get( 'Version' )
+                (string) filemtime( get_stylesheet_directory() . '/style.css' )
         );
 }
 add_action( 'wp_enqueue_scripts', 'mt_lightstack_enqueue_styles' );
